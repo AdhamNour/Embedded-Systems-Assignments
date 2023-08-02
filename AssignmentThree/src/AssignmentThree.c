@@ -15,6 +15,11 @@
 #include "Problem2/Problem2.h"
 #include "Problem3/Problem3.h"
 #include "Problem4/Problem4.h"
+
+#include "Problem11/Problem11.h"
+#include "Problem12/Problem12.h"
+#include "Problem14/Problem14.h"
+
 int main(void) {
 	//testing the first problem
 	int numbers[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -37,11 +42,20 @@ int main(void) {
 	selection_sort(y, 6);
 	print_array_int(y, 6);
 
-	//Testing First and Last Occurence Linear Search
-	int arr[6] = {1,2,3,4,4,4};
-//	print_array_int(arr,6);
-//	printf("the first Occurence of 4 is  on the index= %d\n",)
-
+	//Testing Ptoblem 11;
+	char myString[] = "Embbedded Systems is Awesome;";
+	char *myStringPtr = myString;
+	while (*myStringPtr != '\0') {
+		printf("Character '%c' is has the frequency = %d\n", *myStringPtr,
+				frequancyCoutner(myString, *myStringPtr));
+		myStringPtr++;
+	}
+	printf("the lenth of myStr is %d\n",len(myString));
+	puts(myString);
+	reverseString(myString);
+	puts(myString);
+	reverseString(myString);
+		puts(myString);
 
 	return 0;
 }

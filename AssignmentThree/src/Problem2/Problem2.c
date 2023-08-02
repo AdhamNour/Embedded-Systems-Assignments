@@ -9,7 +9,7 @@
 #include "Problem2.h"
 #include <stdio.h>
 
-char toLower(char x){
+char to_lower(char x){
 	if(x>='a'&&x<='z')return x;
 	if(x>='A'&&x<='Z') return x+('a'-'A');
 	return x;
@@ -18,7 +18,7 @@ char toLower(char x){
 int containsDublicate(char* strt){
 	int charCount['z'-'a']={0};
 	while(*strt !='\0'){
-		char  x = toLower(*strt);
+		char  x = to_lower(*strt);
 		if(charCount[x-'a']!=0) return 1;
 		charCount[x-'a']++;
 		strt++;

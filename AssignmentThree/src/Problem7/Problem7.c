@@ -6,5 +6,5 @@
  */
 
 int arithmaticSeriousTerm(int base,int n){
-	return 2*n+1
+	return 2*n+1;
 }
