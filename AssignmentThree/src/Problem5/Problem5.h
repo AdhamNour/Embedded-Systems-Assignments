@@ -8,6 +8,6 @@
 #ifndef PROBLEM5_PROBLEM5_H_
 #define PROBLEM5_PROBLEM5_H_
 
-int first_occurance_linear_search(int *a, int b);
+int first_occurance_linear_search(int *a, int size,int search_target);
 
 #endif /* PROBLEM5_PROBLEM5_H_ */
