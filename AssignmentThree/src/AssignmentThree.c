@@ -15,7 +15,6 @@
 #include "Problem2/Problem2.h"
 #include "Problem3/Problem3.h"
 #include "Problem4/Problem4.h"
-#include
 int main(void) {
 	//testing the first problem
 	int numbers[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -40,8 +39,8 @@ int main(void) {
 
 	//Testing First and Last Occurence Linear Search
 	int arr[6] = {1,2,3,4,4,4};
-	print_array_int(arr,6);
-	printf("the first Occurence of 4 is  on the index= %d\n",)
+//	print_array_int(arr,6);
+//	printf("the first Occurence of 4 is  on the index= %d\n",)
 
 
 	return 0;
