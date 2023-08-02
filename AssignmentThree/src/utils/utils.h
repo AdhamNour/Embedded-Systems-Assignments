@@ -9,5 +9,6 @@
 #define UTILS_UTILS_H_
 
 void swap (int* a,int *b);
+void print_array_int(int* a,int b);
 
 #endif /* UTILS_UTILS_H_ */
