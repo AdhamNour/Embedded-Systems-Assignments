@@ -19,6 +19,11 @@
 #include "Problem11/Problem11.h"
 #include "Problem12/Problem12.h"
 #include "Problem14/Problem14.h"
+#include "Problem15/Problem15.h"
+#include "Problem15/Problem15.h"
+
+#include "Problem17/Problem17.h"
+#include "Problem18/Problem18.h"
 
 int main(void) {
 	//testing the first problem
@@ -50,12 +55,36 @@ int main(void) {
 				frequancyCoutner(myString, *myStringPtr));
 		myStringPtr++;
 	}
-	printf("the lenth of myStr is %d\n",len(myString));
+	printf("the lenth of myStr is %d\n", len(myString));
 	puts(myString);
 	reverseString(myString);
 	puts(myString);
 	reverseString(myString);
-		puts(myString);
+	puts(myString);
+
+	char result[150] = "My Opnion is:";
+	puts(result);
+	string_concat(result, myString);
+	puts(result);
+
+	print_array_int(y, 6);
+	reverse(y, 6);
+	print_array_int(y, 6);
+
+	int alpha[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 2 };
+	int beta[5] = { 4, 1, 8, 3, 155 };
+	printf("alpha: ");
+	print_array_int(alpha, 10);
+	printf("beta: ");
+	print_array_int(beta, 5);
+	Swap(10, alpha, 5, beta);
+	printf("alpha: ");
+	print_array_int(alpha, 10);
+	printf("beta: ");
+	print_array_int(beta, 5);
+
+	int consigative[14]={1,2,2,3,3,3,3,4,4,4,4,3,3,3};
+	printf("the number of consigative %d is %d",3,findMaxConsecutive(consigative,14,3));
 
 	return 0;
 }
