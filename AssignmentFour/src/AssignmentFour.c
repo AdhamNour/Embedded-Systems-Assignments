@@ -15,6 +15,7 @@
 #include"Problem2/Problem2.h"
 #include"Problem3/Problem3.h"
 
+#include"Problem10/Problem10.h"
 
 #include "utils/utils.h"
 
@@ -32,6 +33,18 @@ int main(void) {
 	print_array_int(y, 6);
 	reverse_arr(y, 6);
 	print_array_int(y, 6);
+
+	int xx =4,yy=10;
+	int *x_ptr=&xx;
+	int *y_ptr=&yy;
+
+	printf("the content of x_ptr is %d and it is located at %p\n",*x_ptr,x_ptr);
+	printf("the content of y_ptr is %d and it is located at %p\n",*y_ptr,y_ptr);
+
+	swap_pointer(&x_ptr,&y_ptr);
+
+	printf("the content of x_ptr is %d and it is located at %p\n",*x_ptr,x_ptr);
+	printf("the content of y_ptr is %d and it is located at %p\n",*y_ptr,y_ptr);
 
 	return EXIT_SUCCESS;
 }
